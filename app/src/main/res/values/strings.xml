@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">大鍋飯</string>
+    <string name="new_data_btn_tv">新增一筆資料</string>
+    <string name="database_change_btn">修改</string>
+    <string name="database_delete_btn">刪除</string>
+    <string name="database_item">品項</string>
+    <string name="database_cost">金額</string>
+    <string name="database_time">日期</string>
+    <string name="new_item_tv">品項:</string>
+    <string name="new_time_tv">消費日期:</string>
+    <string name="new_cost_tv">消費金額:</string>
+    <string name="new_cls_tv">品項類別:</string>
+    <string name="new_size_tv">購買份量:</string>
+    <string-array name="cls_array">
+        <item>豬肉</item>
+        <item>雞肉</item>
+        <item>牛肉</item>
+        <item>蔬菜</item>
+        <item>水果</item>
+    </string-array>
+    <string name="ed_data_hint">請輸入所購買的商品名稱</string>
+    <string name="ed_date_hint">xxxx/xx/xx(雙擊日曆)</string>
+    <string name="ed_cost_hint">請輸入購買金額</string>
+    <string name="ed_size_hint">請輸入購買數量</string>
+    <string name="ad_dt_in_db_btn">新增買菜紀錄</string>
+    <string name="ch_dt_in_db_btn">修改買菜紀錄</string>
+    <string name="group_title">計算一餐每人花費</string>
+    <string name="per_person">每人花費</string>
+    <string name="count_btn">存入資料庫</string>
+    <string name="Food_name">食材名稱</string>
+    <string name="person_using_hint">是否用餐</string>
+    <string name="new_person_hint">請在此輸入新的用餐者名稱</string>
+    <string name="new_database_btn">新增</string>
+    <string name="cost_and_use_tv">花費</string>
+    <string name="user_setting_title">用餐者設定</string>
+    <string name="user_setting_change_btn">修改金額</string>
+    <string name="change_pay_hint">請在此輸入以支付金額</string>
+    <string name="choice_user">選擇</string>
+
+</resources>

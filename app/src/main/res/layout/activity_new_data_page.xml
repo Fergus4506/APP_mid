@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_data_page">
+
+    <TextView
+        android:id="@+id/new_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_item_tv"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_time_tv"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/new_item"
+        app:layout_constraintTop_toBottomOf="@+id/new_item" />
+
+    <TextView
+        android:id="@+id/new_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_cost_tv"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/new_time"
+        app:layout_constraintTop_toBottomOf="@+id/new_time" />
+
+    <TextView
+        android:id="@+id/new_cls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_cls_tv"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/new_cost"
+        app:layout_constraintTop_toBottomOf="@+id/new_cost" />
+
+    <EditText
+        android:id="@+id/ed_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/ed_data_hint"
+        android:inputType="text"
+        android:textColorHint="#EF8D8D"
+        app:layout_constraintStart_toEndOf="@id/new_item"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ed_date_hint"
+        android:inputType="date"
+        android:textColorHint="#4C6A31"
+        app:layout_constraintStart_toEndOf="@+id/new_time"
+        app:layout_constraintTop_toBottomOf="@+id/ed_item" />
+
+    <EditText
+        android:id="@+id/ed_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/ed_cost_hint"
+        android:inputType="number"
+        android:textColorHint="#226F8A"
+        app:layout_constraintStart_toEndOf="@+id/new_cost"
+        app:layout_constraintTop_toBottomOf="@+id/ed_date" />
+
+    <Spinner
+        android:id="@+id/cls_spinner"
+        android:layout_width="190dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/new_cls"
+        app:layout_constraintTop_toTopOf="@+id/new_cls" />
+
+    <TextView
+        android:id="@+id/new_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/new_size_tv"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/new_cls"
+        app:layout_constraintTop_toBottomOf="@+id/new_cls" />
+
+    <Button
+        android:id="@+id/ch_dt_in_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/ad_dt_in_db_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cls_spinner" />
+
+    <EditText
+        android:id="@+id/ed_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/ed_size_hint"
+        android:inputType="number"
+        android:textColorHint="#2C0404"
+        app:layout_constraintStart_toEndOf="@+id/new_size"
+        app:layout_constraintTop_toBottomOf="@+id/cls_spinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

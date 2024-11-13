@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/List_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/Item_tv"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/database_item"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/Cost_tv"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/database_cost"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/database_time"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#995FD3"
+        android:text="@string/database_change_btn"
+        android:textColorLink="#FFFFFF"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5B9441"
+        android:text="@string/database_delete_btn"
+        app:cornerRadius="10dp" />
+</LinearLayout>
